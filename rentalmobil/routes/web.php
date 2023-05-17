@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +24,7 @@ Route::get('/greeting', function () {
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/mobil',[MobilController::class,'index']);
+Route::get('/mobil/create',[MobilController::class,'create']);
+Route::post('/mobil/simpanData',[MobilController::class,'store']);
