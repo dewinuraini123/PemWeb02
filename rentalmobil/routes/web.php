@@ -28,3 +28,4 @@ Route::get('/', function () {
 Route::get('/mobil',[MobilController::class,'index']);
 Route::get('/mobil/create',[MobilController::class,'create']);
 Route::post('/mobil/simpanData',[MobilController::class,'store']);
+Route::get('/merk',[MerkController::class,'index']);
